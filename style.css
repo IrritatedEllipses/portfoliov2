@@ -1,0 +1,193 @@
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+/* Typography */
+
+.sectionOpen {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sectionParagraph {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/* Navigation */
+
+.topBar {
+    background: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+.topBar ul {
+    list-style-type: none;
+    /* float: right; */
+    overflow: hidden;
+}
+
+.topBar li {
+    display: inline;
+}
+
+.topBar a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 16px;
+    font-size: 16px;
+}
+
+/* Splash Image */
+
+.splash {
+    width: 100%;
+    
+    background-image: url(/barSplash.jpeg);
+    background-image: url(/barSplash.jpeg), linear-gradient(white, black);
+    background-size: cover;
+    
+}
+
+.splash button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 1em;
+    height: 3em;
+}
+
+.splashText {
+    margin-top: 300px;
+    text-align: center;
+    color: black;
+}
+
+
+/* About Section */
+
+
+.about {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    
+    
+    }
+
+.aboutParagraph {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.aboutHeading {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+/* Skills Section */
+
+.skills {
+    background-color: white;
+    color: black;
+    margin-top: -1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+
+.skillsHeading {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.skillsParagraph {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+/* Learning Section */
+
+.learningList {
+    background-color: black;
+    color: white;
+    margin-top: -1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin: auto;
+    }
+
+.learningParagraph {
+    flex-basis: 50%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    }
+
+.learningHeading {
+    flex-basis: 50%;
+    text-align: center;
+    align-self: flex-end;
+    margin: auto;
+}
+
+/* PortFolio */
+
+.portfolio {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Hire Me */
+
+.hireMe {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(15, 17, 19);
+    color: white;
+    display: inline;
+    
+    bottom: 0;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 10px
+}
