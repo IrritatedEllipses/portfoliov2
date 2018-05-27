@@ -191,3 +191,14 @@ body {
     text-align: center;
     font-size: 10px
 }
+
+/* Thank you Page */
+
+.thanksContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
