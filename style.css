@@ -178,9 +178,40 @@ body {
     display: block;
 }
 
-.contactForm {
+.hireMeSocial {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contactForm form {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contactForm input {
+    width: 375px;
+    display: block;
+    height: 25px;
+}
+
+.contactForm textarea {
+    width: 373px;
+    height: 150px;
+    display: block;
+}
+
+.contactForm button {
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 30px;
+   
 }
 
 /* Footer */
