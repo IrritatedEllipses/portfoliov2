@@ -178,11 +178,10 @@ body {
     display: block;
 }
 
-.hireMeSocial {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.hireMe a {
+    color: white;
 }
+
 
 .contactForm form {
     margin: auto;
@@ -212,6 +211,14 @@ body {
     bottom: 20px;
     height: 30px;
    
+}
+
+.hireMeSocial {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 /* Footer */
