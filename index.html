@@ -6,221 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Full Stack on the Rocks</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="styleRefactor.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
-        <nav class="topBar">
-
-            <ul>
-                <li>
-                    <a href="#homeNode">Home</a>
-                </li>
-                <li>
-                    <a href="#aboutNode">About</a>
-                </li>
-                <li>
-                    <a href="#portfolioNode">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#hireMeNode">Hire Me</a>
-                </li>
-            </ul>
-
+        <nav class="topBar" id="hamTopBar">
+            <a href="#homeNode">Home</a>
+            <a href="#aboutNode">About</a>
+            <a href="#portfolioNode">Portfolio</a>
+            <a href="#hireMeNode">Hire Me</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamBar()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <header class="splash" id="homeNode">
-            <div class="splashPic">
-                
-            </div>
+
             <div class="splashText">
-                <h3 class="sectionOpen">Let's craft something together</h3>
-                <p class="sectionParagraph">Developer in Orlando, FL looking for a great team.</p>
+                <h3>Let's craft something together</h3>
+                <p>Developer in Orlando, FL looking for a great team.</p>
             </div>
+
         </header>
-        <div id="aboutNode"></div>
-        <main class="content">
-            <section class="about">
-                <div class="aboutParagraph">
-                    <p class="sectionParagraph">
-                        Sometime in the mid 2000s I filled a glass with gin and a splash of tonic in exchange for money. I continued doing that for
-                        the next fifteen years. While making a personal connection with guests and solving their problems
-                        with wit and alcohol know-how has been fun I've been lacking something I crave in my life: A challenge.
-                        Development was a natural choice for me and, since the beginning of 2018 I've spent my time learning
-                        the ins and outs of front-end web development. Now I'm looking for a place to shake up my front-end
-                        cocktail while loading up my back-end rail.
-                    </p>
-                </div>
-                <div class="aboutHeading">
-                    <h3 class="sectionOpen">From Bartender to Full Stack Web Developer</h3>
-                </div>
-            </section>
-            <section class="skills" id="skillsNode">
-                <div class="skillsHeading">
-                    <h3 class="sectionOpen">What's on tap?</h3>
-                    <p class="sectionParagraph">
-                        Skills, like a good whiskey, get better over time. Here are a few of mine that I feel have been barrel aged to perfection.
-                    </p>
-                </div>
-                <div class="skillsParagraph">
-                    <div class="skillsFrontEnd">
-                        <p class="sectionParagraph">
-                            <i class="fas fa-code"></i>&nbsp;&nbsp;Semantic HTML
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fab fa-css3-alt"></i>&nbsp;&nbsp;Responsive CSS
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fab fa-js"></i>&nbsp;&nbsp;Interactive JavaScript
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fab fa-react"></i>&nbsp;&nbsp;React
-                        </p>
-                    </div>
-                    <div class="skillsTechnology">
-                        <p class="sectionParagraph">
-                            <i class="fab fa-git"></i>&nbsp;&nbsp;Git
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fab fa-linux"></i>&nbsp;&nbsp;Linux
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fab fa-windows"></i>&nbsp;&nbsp;Windows
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fab fa-slack-hash"></i>&nbsp;&nbsp;Slack
-                        </p>
-                    </div>
-                    <div class="skillsSoft">
-                        <p class="sectionParagraph">
-                            <i class="fas fa-clock"></i>&nbsp;&nbsp;Time Management
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fas fa-people-carry"></i>&nbsp;&nbsp;Teamwork
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fas fa-chess"></i>&nbsp;&nbsp;Problem Solving
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fas fa-comments"></i>&nbsp;&nbsp;Communication
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fas fa-book"></i>&nbsp;&nbsp;Knoweldge Seeking
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fas fa-briefcase"></i>&nbsp;&nbsp;Strong Work Ethic
-                        </p>
-                    </div>
+        <section class="about" id="aboutNode">
+            <h3 class="sectionOpen">From Bartender to Full Stack Web Developer</h3>
+            <p class="sectionParagraph">
+                Sometime in the mid 2000s I filled a glass with gin and a splash of tonic in exchange for money. I continued doing that for
+                the next fifteen years. While making a personal connection with guests and solving their problems with wit
+                and alcohol know-how has been fun I've been lacking something I crave in my life: A challenge. Development
+                was a natural choice for me and, since the beginning of 2018 I've spent my time learning the ins and outs
+                of front-end web development. Now I'm looking for a place to shake up my front-end cocktail while loading
+                up my back-end rail.
+            </p>
+        </section>
+        <div class="socialMedia">
+            <a href="https://github.com/irritatedellipses" target="_blank">
+                <i class="fab fa-github"></i> IrritatedEllipses</a>
+            <br>
+            <a href="https://twitter.com/ChrisCulpFSOTR" target="_blank">
+                <i class="fab fa-twitter"></i> ChrisFSOTR</a>
+            <br>
+            <a href="https://www.linkedin.com/in/christopher-culp-5541b310b/" target="_blank">
+                <i class="fab fa-linkedin-in"></i> christopher-culp-5541b310b</a>
+            <br>
+            <a href="mailto:christopher.D.Culp@gmail.com">
+                <i class="fas fa-envelope"></i> Christopher.D.Culp@gmail.com</a>
+        </div>
+        <section class="skills" id="skillsNode">
+            <div class="skillsHeading">
+                <h3 class="sectionOpen">What's on tap?</h3>
+                <p class="sectionParagraph">
+                    Skills, like a good whiskey, get better over time. Here are a few of mine that I feel have been barrel aged to perfection.
+                </p>
+            </div>
+            <div class="skillsParagraph">
+                <div class="skillsFrontEnd">
+                    <i class="fas fa-code"></i>&nbsp;&nbsp;Semantic HTML
+                    <i class="fab fa-css3-alt"></i>&nbsp;&nbsp;Responsive CSS
+                    <i class="fab fa-js"></i>&nbsp;&nbsp;Interactive JavaScript
+                    <i class="fab fa-react"></i>&nbsp;&nbsp;React
 
                 </div>
-            </section>
-            <section class="learningList">
-                <div class="learningParagraph">
-                    <div class="lpOne">
-                        <p class="sectionParagraph">
-                            <i class="fas fa-database"></i>&nbsp;&nbsp;SQL
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="far fa-gem"></i>&nbsp;&nbsp;Ruby (on Rails)
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fab fa-node"></i>&nbsp;&nbsp;NodeJS
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fab fa-php"></i>&nbsp;&nbsp;PHP
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fab fa-wordpress"></i>&nbsp;&nbsp;WordPress
-                        </p>
-                    </div>
-
-                    <div class="lpTwo">
-                        <p class="sectionParagraph">
-                            <i class="fab fa-wordpress"></i>&nbsp;&nbsp;Angular
-                        </p>
-                        <p class="sectionParagraph">
-                            <i class="fas fa-database"></i>&nbsp;&nbsp;MongoDB
-                        </p>
-
-                        <p class="sectionParagraph">
-                            <i class="far fa-hdd"></i>&nbsp;&nbsp;Machine Learning
-                        </p>
-                    </div>
-                </div>
-                <div class="learningHeading">
-                    <h3 class="sectionOpen">What's in the barrel?</h3>
-                    <p class="sectionParagraph">
-                        Some skills take a bit longer to become robust and flavourful. These are languages and technologies I'm working on.
-                    </p>
-                </div>
-
-            </section>
-            <section class="portfolio" id="portfolioNode">
-                <div class="portfolioHeading">
-                    <h3 class="sectionOpen">Portfolio</h3>
-                </div>
-                <div class="portfolioParagraph">
+                <div class="skillsTechnology">
+                    <i class="fab fa-git"></i>&nbsp;&nbsp;Git
+                    <i class="fab fa-linux"></i>&nbsp;&nbsp;Linux
+                    <i class="fab fa-windows"></i>&nbsp;&nbsp;Windows
+                    <i class="fab fa-slack-hash"></i>&nbsp;&nbsp;Slack
 
                 </div>
-                <div class="portfolioDisplay">
-                    <div class="card">
-                        
-                    </div>
-
-                </div>
-            </section>
-            <section class="hireMe" id="hireMeNode">
-                <div class="hireMeHeading">
-                    <h3 class="sectionOpen">Think I'd make a good fit for your team?</h3>
-                    <p class="sectionParagraph">Let's build something together. </p>
+                <div class="skillsSoft">
+                    <i class="fas fa-clock"></i>&nbsp;&nbsp;Time Management
+                    <i class="fas fa-people-carry"></i>&nbsp;&nbsp;Teamwork
+                    <i class="fas fa-chess"></i>&nbsp;&nbsp;Problem Solving
+                    <i class="fas fa-comments"></i>&nbsp;&nbsp;Communication
+                    <i class="fas fa-book"></i>&nbsp;&nbsp;Knowledge Seeking
+                    <i class="fas fa-briefcase"></i>&nbsp;&nbsp;Strong Work Ethic
                 </div>
 
-                <div class="contactForm">
-                    <form action="https://formspree.io/christopher.d.culp@gmail.com" method="POST">
-                        <input type="text" name="name" placeholder="Companies Name">
-                        <br>
-                        <input type="email" name="_replyto" placeholder="Email Address">
-                        <br>
-                        <textarea name="message" placeholder="Why do you think we'd make a good team?"></textarea>
-                        <br>
-                        <input type="text" name="_gotcha" style="display:none" />
-                        <input type="submit" value="Send">
-                    </form>
+            </div>
+        </section>
+        <section class="learningList">
+            <div class="learningParagraph">
+                <h3 class="sectionOpen">What's in the barrel?</h3>
+                <p class="sectionParagraph">
+                    Some skills take a bit longer to become robust and flavourful. These are languages and technologies I'm working on.
+                </p>
+                <div class="lpOne">
+                    <i class="fas fa-database"></i>&nbsp;&nbsp;SQL
+                    <i class="far fa-gem"></i>&nbsp;&nbsp;Ruby (on Rails)
+                    <i class="fab fa-node"></i>&nbsp;&nbsp;NodeJS
+                    <i class="fab fa-php"></i>&nbsp;&nbsp;PHP
+                    <i class="fab fa-wordpress"></i>&nbsp;&nbsp;WordPress
+                </div>
+                <div class="lpTwo">
+                    <i class="fab fa-wordpress"></i>&nbsp;&nbsp;Angular
+                    <i class="fas fa-database"></i>&nbsp;&nbsp;MongoDB
+                    <i class="far fa-hdd"></i>&nbsp;&nbsp;Machine Learning
+
+                </div>
+            </div>
+
+        </section>
+        <section class="portfolio" id="portfolioNode">
+            <div class="portfolioHeading">
+                <h3 class="sectionOpen">Portfolio</h3>
+            </div>
+            <div class="portfolioParagraph">
+
+            </div>
+            <div class="portfolioDisplay">
+                <div class="card">
+
                 </div>
 
-                <div class="hireMeSocial">
-                    <div>
-<a href="https://github.com/irritatedellipses" target="_blank">
-    <i class="fab fa-github fa-7x"></i>
-</a>
-                    </div>
-                    <div>
-<a href="https://twitter.com/ChrisCulpFSOTR" target="_blank">
-    <i class="fab fa-twitter fa-7x"></i>
-</a>
-                    </div>
-                    <div>
-<a href="https://www.linkedin.com/in/christopher-culp-5541b310b/" target="_blank">
-    <i class="fab fa-linkedin-in fa-7x"></i>
-</a>
-                    </div>
-                    <div>
-                        <a href="mailto:christopher.D.Culp@gmail.com"><i class="fas fa-envelope fa-7x"></i></a>
-                    </div>
-                </div>
-
-            </section>
-        </main>
+            </div>
+        </section>
+        <section class="hireMe" id="hireMeNode">
+            <div class="hireMeHeading">
+                <h3 class="sectionOpen">Think I'd make a good fit for your team?</h3>
+                <p class="sectionParagraph">Let's build something together. </p>
+            </div>
+            <div class="contactForm">
+                <form action="https://formspree.io/christopher.d.culp@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Companies Name">
+                    <br>
+                    <input type="email" name="_replyto" placeholder="Email Address">
+                    <br>
+                    <textarea name="message" placeholder="Why do you think we'd make a good team?"></textarea>
+                    <br>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </section>
         <footer class="footer">
             <p>Full Stack on the Rocks &copy; 2018 created and maintained by Christopher Culp</p>
             <p>Christopher.D.Culp@gmail.com</p>
         </footer>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
