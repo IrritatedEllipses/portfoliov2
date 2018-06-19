@@ -4,14 +4,21 @@ Secondhand Grey: #3f3f3f
 Whitish: #f5f5f5 
 Light grey: #dcdcdc
 */
-
+:root {
+    --main-bg-color: #dcdcdc;
+    --main-font-color: #262626;
+}
 
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #dcdcdc;
+    font-family: 'Titillium Web',
+    sans-serif;
+    
 }
 
 .container {
@@ -20,13 +27,14 @@ body {
 }
 
 .topBar {
-    background-color: #262626;
-    color:#f5f5f5;
+    background-color: #f5f5f5;
+    color:#262626;
     height: 8vh;
     width: 100vw;
     top: 0;
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 
 .topBar ul {
@@ -36,6 +44,8 @@ body {
 
 .topBar li {
     display: inline;
+    padding: 10px;
+    font-size: calc(16px + 0.5vh);
 }
 
 .topBar a {
@@ -45,8 +55,22 @@ body {
 }
 
 .splash {
-    background-color: #3f3f3f;
-    color: #f5f5f5;
-    margin: 0;
+    background-color: #f5f5f5;
+    color: #262626;
+    margin-top: 3%;
     padding: 0;
+    height: 92vh;
+}
+
+.splashPic {
+    height: 70%;
+    background-image: url(splashcoding.svg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.splashText {
+    height: 30%;
+    text-align: center;
 }
