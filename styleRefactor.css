@@ -27,7 +27,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr; */
+    
     grid-template-areas:
     "nav nav nav"
     "splash splash splash"
@@ -65,6 +65,7 @@ body {
         text-align: left;
     }
 }
+
 
 /* NavBar */
 
@@ -109,6 +110,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    border-bottom: 2px solid #262626;
 }
 
 .splashText {
@@ -117,26 +119,26 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    
-    
-    
 }
 
 /* About me */
 
 .about {
     grid-area: about;
+    margin: auto;
 }
 
 /* Socialmedia */
 
 .socialMedia {
     grid-area: socialMedia;
-    display: block;
+    margin: auto;
+
 }
 
 .socialMedia a{
     text-decoration: none;
+    display: block;
 
 }
 
@@ -145,20 +147,27 @@ body {
 
 .skills {
     grid-area: skills;
+    border-right: 2px solid var(--alternate-bg-color);
+    text-align: center;
 }
 
 .learningList {
     grid-area: learning;
+    border-right: 2px solid var(--alternate-bg-color);
+    text-align: center;
 }
 
 .wanted {
     grid-area: wanted;
+    text-align: center;
+    
 }
 
 /* Portfolio area */
 
 .portfolio {
     grid-area: port;
+    text-align: center;
 }
 
 /* Contact form */
@@ -170,5 +179,10 @@ body {
 /* Footer */
 
 .footer {
-    grid-area: footer;
+    grid-area: footer;    
+    background-color: var(--alternate-bg-color);
+    color: var(--alternate-font-color);
+    text-align: center;
+    font-size: 8px;
+    height: 42px;
 }
