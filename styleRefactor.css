@@ -22,12 +22,21 @@ body {
     font-family: 'Titillium Web',
     sans-serif;
     
+    
+}
+
+body a:link {
+    color: var(--main-font-color)
+}
+
+body a:visited {
+    color: var(--main-font-color)
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-gap: 20px;
     grid-template-areas:
     "nav nav nav"
     "splash splash splash"
@@ -43,6 +52,26 @@ body {
 /* Under 600px */
 
 @media screen and (max-width: 600px) {
+    /* Grid resize */
+
+    .container {
+        display: grid;
+        grid-template-areas:
+        "nav"
+        "splash"
+        "about"
+        "skills"
+        "learning"
+        "wanted"
+        "port"
+        "contact"
+        "socialMedia"
+        "footer";
+        align-items: center;
+    }
+
+
+    /* Nav Bar */
     .topBar a:not(:first-child) {
         display: none;
     }
@@ -110,7 +139,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    border-bottom: 2px solid #262626;
+    
+    /* border-bottom: 2px solid #262626; */
 }
 
 .splashText {
@@ -147,13 +177,13 @@ body {
 
 .skills {
     grid-area: skills;
-    border-right: 2px solid var(--alternate-bg-color);
+    
     text-align: center;
 }
 
 .learningList {
     grid-area: learning;
-    border-right: 2px solid var(--alternate-bg-color);
+    
     text-align: center;
 }
 
@@ -174,6 +204,7 @@ body {
 
 .hireMe {
     grid-area: contact;
+    text-align: center;
 }
 
 /* Footer */
