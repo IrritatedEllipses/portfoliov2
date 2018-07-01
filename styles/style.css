@@ -139,7 +139,7 @@ body a:visited {
     }
 }
 
-/* Main body */
+/* About */
 
 .about {
     /* background-color: var(--alternate-bg-color); */
@@ -162,6 +162,25 @@ body a:visited {
 .aright {
     font-size: 1.2em;
 }
+
+@media screen and (max-width: 600px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: -1em;
+    }
+    .aleft {
+        border-right: none;
+        border-bottom: solid 2px var(--alternate-font-color);
+        margin: 2% 0 0 1;
+    }
+    .aright {
+        margin: 0 2% 0 2%;
+    }
+}
+
+/* Tools */
 
 .tools {
     height: 75vh;
@@ -187,6 +206,25 @@ body a:visited {
     border-right: solid 2px white;
 }
 
+@media screen and (max-width: 600px) {
+    .tools {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        margin-top: -1em;
+    }
+    .aleft {
+        border-right: none;
+        border-bottom: solid 2px var(--alternate-font-color);
+        margin: 2% 0 0 1;
+    }
+    .aright {
+        margin: 0 2% 0 2%;
+    }
+}
+
+/* Contact */
+
 .contact {
     margin-top: 0;
     height: 60vh;
@@ -211,20 +249,4 @@ body a:visited {
     margin: 0% 50% 0% 50%;
     width: 100%;
     font-size: 1.5em;
-}
-@media screen and (max-width: 600px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: -1em;
-    }
-    .aleft {
-        border-right: none;
-        border-bottom: solid 2px var(--alternate-font-color);
-        margin: 2% 0 0 1;
-    }
-    .aright {
-        margin: 0 2% 0 2%;
-    }
 }
