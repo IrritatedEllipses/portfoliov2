@@ -13,8 +13,8 @@ html {
 body {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
-    font-family: 'Titillium Web', sans-serif;  
-    font-size: 80%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100%;
 }
 
 body a:link {
@@ -35,7 +35,6 @@ body a:visited {
 .topBar {
     background-color: #f5f5f5;
     overflow: hidden;
-    
 }
 
 .topBar a {
@@ -73,21 +72,19 @@ body a:visited {
 }
 
 .splashPic {
-    display: flex;
-    justify-content: center;
     height: auto;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
 }
 
 .splashPic img {
-    flex-shrink: 0;
+    flex-shrink: 1;
     min-width: 100%;
     min-height: 100%;
 }
 
 .splashText {
-    margin-right: 10%;
+    /* margin-right: 10%; */
     margin-top: 10%;
     text-align: center;
     font-size: 1.5em
@@ -120,6 +117,7 @@ body a:visited {
         justify-content: flex-end;
         border: none;
         height: 75vh;
+        margin: 2% 0 10% 0;
     }
     .splashPic {
         display: flex;
@@ -129,7 +127,6 @@ body a:visited {
         width: auto;
     }
     .splashPic img {
-        flex-shrink: 0;
         min-width: 100%;
         min-height: 100%;
     }
@@ -167,7 +164,7 @@ body a:visited {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-top: -1em;
+        height: 100vh;
     }
     .aleft {
         border-right: none;
@@ -195,9 +192,7 @@ body a:visited {
 
 .tools .aleft {
     border-right: none;
-    
     margin: auto;
-    
 }
 
 .tools .aright {
@@ -208,17 +203,19 @@ body a:visited {
 @media screen and (max-width: 600px) {
     .tools {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-evenly;
-        margin-top: -1em;
+        height: 100vh;
+        clip-path: none;
     }
-    .aleft {
+    .tools .aleft {
         border-right: none;
         border-bottom: solid 2px var(--alternate-font-color);
-        margin: 2% 0 0 1;
-    }
-    .aright {
         margin: 0 2% 0 2%;
+    }
+    .tools .aright {
+        margin: 0 2% 0 2%;
+        border-right: none;
     }
 }
 
@@ -231,8 +228,6 @@ body a:visited {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
-    
 }
 
 .contact .aleft {
@@ -248,4 +243,22 @@ body a:visited {
     margin: 0% 50% 0% 50%;
     width: 100%;
     font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        font-size: 84%;
+    }
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 2em;
+    }
+
+    
 }
