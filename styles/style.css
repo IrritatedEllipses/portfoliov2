@@ -142,14 +142,14 @@ body a:visited {
 
 .about {
     /* background-color: var(--alternate-bg-color); */
-    background-color: #86abe8;
+    background-color: #899DA3;
     height: 75vh;
     margin-top: 0.3em;
     clip-path: polygon( 0 0, 100% 12%, 100% 98%, 0 calc(100% - 6vw));
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: var(--alternate-font-color);
+    color: white;
 }
 
 .aleft {
@@ -190,7 +190,7 @@ body a:visited {
     color: white;
     margin-bottom: 0;
     clip-path: polygon(37% 5%, 80% 15%, 100% 20%, 100% 80%, 91% 96%, 31% 78%, 0% 80%, 0% 20%);
-    background-color: #e8ad86;
+    background-color: #A38F89;
 }
 
 .tools .aleft {
