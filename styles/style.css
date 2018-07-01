@@ -13,8 +13,7 @@ html {
 body {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
-    font-family: 'Titillium Web', sans-serif;
-    margin: 10px;
+    font-family: 'Titillium Web', sans-serif;  
     font-size: 80%;
 }
 
@@ -28,7 +27,7 @@ body a:visited {
 }
 
 .container {
-    margin: 30px;
+    margin: 0 10% 0 10%;
 }
 
 /* Nav Bar */
@@ -36,7 +35,7 @@ body a:visited {
 .topBar {
     background-color: #f5f5f5;
     overflow: hidden;
-    grid-area: nav;
+    
 }
 
 .topBar a {
@@ -46,7 +45,7 @@ body a:visited {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.5em;
 }
 
 .topBar a:hover {
@@ -70,7 +69,7 @@ body a:visited {
     justify-content: space-between;
     flex-direction: row;
     height: 80vh;
-    margin: 0;
+    margin: 5% 0 0 0;
 }
 
 .splashPic {
