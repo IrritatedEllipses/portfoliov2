@@ -8,13 +8,14 @@
 html {
     height: 100%;
     scroll-behavior: smooth;
+    font-size: 15px;
 }
 
 body {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
     font-family: 'Titillium Web', sans-serif;
-    font-size: 100%;
+    
 }
 
 body a:link {
@@ -59,7 +60,7 @@ body a:visited {
 
 .topBar .icon {
     display: none;
-}
+} 
 
 /* Splash */
 
@@ -90,51 +91,6 @@ body a:visited {
     font-size: 1.5em
 }
 
-@media screen and (max-width: 600px) {
-    .topBar a:not(:first-child) {
-        display: none;
-    }
-    .topBar a.icon {
-        float: right;
-        display: block;
-    }
-    .topBar.responsive {
-        position: relative;
-    }
-    .topBar.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topBar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .splash {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        border: none;
-        height: 75vh;
-        margin: 2% 0 10% 0;
-    }
-    .splashPic {
-        display: flex;
-        overflow: hidden;
-        align-items: center;
-        height: 50%;
-        width: auto;
-    }
-    .splashPic img {
-        min-width: 100%;
-        min-height: 100%;
-    }
-    .splashText {
-        align-content: center;
-    }
-}
-
 /* About */
 
 .about {
@@ -159,22 +115,6 @@ body a:visited {
     font-size: 1.2em;
 }
 
-@media screen and (max-width: 600px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 100vh;
-    }
-    .aleft {
-        border-right: none;
-        border-bottom: solid 2px var(--alternate-font-color);
-        margin: 2% 0 0 1;
-    }
-    .aright {
-        margin: 0 2% 0 2%;
-    }
-}
 
 /* Tools */
 
@@ -198,25 +138,6 @@ body a:visited {
 .tools .aright {
     margin: 0% 5% 0% 5%;
     border-right: solid 2px white;
-}
-
-@media screen and (max-width: 600px) {
-    .tools {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 100vh;
-        clip-path: none;
-    }
-    .tools .aleft {
-        border-right: none;
-        border-bottom: solid 2px var(--alternate-font-color);
-        margin: 0 2% 0 2%;
-    }
-    .tools .aright {
-        margin: 0 2% 0 2%;
-        border-right: none;
-    }
 }
 
 /* Contact */
@@ -245,7 +166,86 @@ body a:visited {
     font-size: 1.5em;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 600px) {
+    .html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+    .topBar a:not(:first-child) {
+        display: none;
+    }
+    .topBar a.icon {
+        float: right;
+        display: block;
+    }
+    .topBar.responsive {
+        position: relative;
+    }
+    .topBar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topBar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .splash {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        border: none;
+        height: 100vh;
+        margin: 2% 0 10% 0;
+    }
+    .splashPic {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        height: 50%;
+        width: auto;
+    }
+    .splashPic img {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .splashText {
+        align-content: center;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        clip-path: none;
+    }
+    .aleft {
+        border-right: none;
+        border-bottom: solid 2px var(--alternate-font-color);
+        margin: 2% 0 0 1;
+    }
+    .aright {
+        margin: 0 2% 0 2%;
+    }
+    .tools {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        clip-path: none;
+        margin-top: 20px;
+    }
+    .tools .aleft {
+        border-right: none;
+        border-bottom: solid 2px var(--alternate-font-color);
+        margin: 0 2% 0 2%;
+    }
+    .tools .aright {
+        margin: 0 2% 0 2%;
+        border-right: none;
+    }
     .contact {
         display: flex;
         flex-direction: column;
@@ -256,7 +256,8 @@ body a:visited {
     .social {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         line-height: 2em;
+        font-size: 1.3em;
     }
 }
